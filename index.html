@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- =========================================================
+     SEO — GIỮ CẤU TRÚC CHI TIẾT THEO TRANG GỐC, CHỈ ĐỔI NỘI DUNG PACOVN
+     ========================================================= -->
+<title>PACOAI| Tri thức • Sáng tạo • Công nghệ</title>
+
+<meta property="og:site_name" content="PACOVN.COM" />
+<meta property="og:title" content="PACOVN.COM | Tri thức • Sáng tạo • Công nghệ" />
+
+<meta name="keywords" content="PACOVN, PACOAI, Pacobooks, Thiện Nhân, tác giả Thiện Nhân, sách, xuất bản sách, tri thức sách, tri thức số, trí tuệ nhân tạo, AI, tự động hóa, công nghệ, sáng tạo" />
+<meta name="description" content="PACOAI là cổng thông tin kết nối Pacobooks, tác giả Thiện Nhân và PacoAI, nơi giao thoa giữa sách, tri thức, sáng tạo, công nghệ AI và các ứng dụng thực tế." />
+
+<link rel="canonical" href="https://pacovn.com/" />
+<link rel="icon" href="https://pacovn.com/favicon.webp" type="image/webp">
+<link rel="apple-touch-icon" href="https://pacovn.com/logo_pacoai.webp">
+
+<meta property="og:description" content="PACOVN.COM kết nối sách, tác giả, tri thức và công nghệ AI, hướng đến việc đưa những giá trị được tạo ra vào ứng dụng thực tế." />
+<meta property="og:image" content="https://pacovn.com/paco-hero.webp" />
+<meta property="og:image:secure_url" content="https://pacovn.com/paco-hero.webp" />
+<meta property="og:image:width" content="1800" />
+<meta property="og:image:height" content="1000" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pacovn.com/" />
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PACOVN.COM",
+  "url": "https://pacovn.com/",
+  "description": "Cổng thông tin kết nối Pacobooks, tác giả Thiện Nhân và PacoAI, phát triển các giá trị về sách, tri thức, sáng tạo và công nghệ."
+}
+</script>
+<style>
+/* =========================================================
+   KHỐI 0 — THIẾT LẬP CHUNG
+   ========================================================= */
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#d0e8e0;color:#333;font-family:'Times New Roman',serif}.paco-page-wrap{max-width:900px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 24px rgba(0,0,0,.06)}img{max-width:100%;display:block;pointer-events:none;-webkit-user-drag:none;user-select:none}.hidden{display:none}.container-paco{max-width:900px;margin:auto}.section{padding:60px 28px}.section.alt{background:#f8f9fa}.section-label{display:block;color:#004a99;font-size:1.55em;font-weight:bold;letter-spacing:2px;text-transform:uppercase;border-left:6px solid #004a99;padding-left:15px;margin-bottom:24px;line-height:1.2;text-shadow:1px 1px 0 #ddd}.section-title{font-size:2em;color:#004a99;margin:0 0 18px;text-transform:uppercase}.section-kicker{font-size:.95em;font-weight:bold;color:#007c70;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}.section-text{font-size:1.18em;line-height:1.85;text-align:justify;margin:0 0 20px}.section-image{width:100%;height:auto;border-radius:8px;margin:28px auto 0;box-shadow:0 10px 28px rgba(0,0,0,.10)}.paco-btn{display:inline-block;margin-top:12px;padding:10px 24px;border:1.5px solid #004a99;border-radius:99px;color:#004a99;text-decoration:none;font-weight:bold;transition:.2s}.paco-btn:hover{background:#004a99;color:#fff}.flow-line{text-align:center;color:#004a99;font-weight:bold;letter-spacing:1px;line-height:1.8;margin:24px 0}.domain-note{font-size:.95em;color:#666;margin-top:8px}
+@media(max-width:600px){.section{padding:40px 16px}.section-label{font-size:1.15em}.section-title{font-size:1.55em}.section-text{font-size:1.08em;line-height:1.7}}
+
+/* =========================================================
+   KHỐI 1 — MENU 3 GẠCH
+   ========================================================= */
+.menu-paco{position:fixed;top:10px;right:calc((100vw - 900px)/2);z-index:10001;color:#008080;font-size:24px;cursor:pointer;transition:.3s}.menu-paco:hover{color:#ff6600;transform:scale(1.1)}.noidung-menu{display:none;position:fixed;top:50px;right:calc((100vw - 900px)/2);background:#fff;border:1px solid #008080;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:10000;width:210px;border-radius:4px;overflow:hidden}.noidung-menu a{display:block;padding:12px 15px;text-decoration:none;color:#008080;font-weight:bold;text-transform:uppercase;border-bottom:1px solid #eee}.noidung-menu a:hover{background:#008080;color:#fff}@media(max-width:900px){.menu-paco,.noidung-menu{right:15px!important}}
+
+/* =========================================================
+   KHỐI 2 — THANH GHIM — GIỮ CƠ CHẾ STICKY
+   Nhận diện đã đổi theo yêu cầu: PACOAI + tagline
+   ========================================================= */
+.header-fixed-container{position:-webkit-sticky;position:sticky;top:0;z-index:9999;width:100%;background-color:rgba(240,252,255,.72);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border-bottom:1px solid rgba(0,203,153,.08)}.paco-brand{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;padding:4px 45px 5px;min-height:38px;max-width:100%;margin:0 auto;white-space:nowrap}.paco-brand-logo{display:inline-flex;align-items:center;line-height:1}.paco-brand-paco{color:#01a983;font-size:24px;font-weight:900;letter-spacing:2px;text-shadow:1px 1px 0 #007399}.paco-brand-ai{color:#004a99;font-size:18px;font-weight:900;letter-spacing:1px;text-shadow:1px 1px 0 rgba(0,115,153,.35)}.paco-brand-sub{display:inline-flex;align-items:center;color:#004a99;font-size:11px;font-weight:bold;letter-spacing:.55px;line-height:1}@media(max-width:600px){.paco-brand{gap:6px;padding:4px 42px 5px}.paco-brand-paco{font-size:20px}.paco-brand-ai{font-size:15px}.paco-brand-sub{font-size:9px;letter-spacing:.25px}}
+
+/* =========================================================
+   KHỐI 3 — HERO
+   HÌNH: paco-hero.webp — 1800 × 1000 px
+   ========================================================= */
+.hero{position:relative;min-height:500px;display:flex;align-items:flex-end;background:#10202a url('paco-hero.webp') center/cover no-repeat;overflow:hidden}.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.72))}.hero-content{position:relative;z-index:2;padding:50px 38px;color:#fff;max-width:760px}.hero h1{font-size:2.45em;letter-spacing:2px;margin:0 0 12px}.hero p{font-size:1.25em;line-height:1.6;margin:0 0 20px}.hero .paco-btn{color:#fff;border-color:#fff}.hero .paco-btn:hover{background:#fff;color:#004a99}@media(max-width:600px){.hero{min-height:420px}.hero-content{padding:34px 18px}.hero h1{font-size:1.65em}.hero p{font-size:1.05em}}
+
+/* =========================================================
+   KHỐI 9 — FORM LIÊN HỆ
+   Giữ cơ chế gửi Google Apps Script từ form cũ.
+   ========================================================= */
+.contact-wrap{display:flex;gap:20px;align-items:stretch}.contact-form{flex:1;padding:24px;background:rgba(240,245,250,.92);border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.08);border:1px solid #ddd;border-top:4px solid #004a99}.contact-form input,.contact-form textarea{width:100%;padding:12px 15px;border:1px solid #ccc;border-radius:8px;font-size:16px;font-family:inherit;background:#fafafa;color:#1a1a1a;margin-bottom:15px}.contact-form textarea{min-height:130px;resize:vertical}.submit-btn{width:80%;margin:0 auto;display:block;font-family:inherit;background:#004a99;color:#fff;border:2px solid #d6e7ff;padding:12px;font-size:17px;font-weight:900;border-radius:99px;text-transform:uppercase;cursor:pointer}.contact-side{width:34%;display:flex;flex-direction:column;gap:12px}.contact-card{flex:1;padding:18px;border:1px dashed #004a99;border-radius:12px;background:#f0f5fa;text-align:center;display:flex;flex-direction:column;justify-content:center}.contact-card b{color:#004a99;font-size:15px}.contact-card p{font-size:13px;margin:6px 0 0;color:#555}@media(max-width:600px){.contact-wrap{flex-direction:column}.contact-side{width:100%;flex-direction:row}.contact-card{padding:12px}.submit-btn{width:100%}}
+
+/* =========================================================
+   KHỐI 10 — FOOTER
+   ========================================================= */
+.paco-footer{background:#263746;color:#ecf0f1;padding:34px 25px 100px}.footer-flex{display:flex;gap:30px;justify-content:space-between}.footer-column{flex:1}.footer-brand{display:block;color:#fff;font-weight:bold;font-size:1.25em;margin-bottom:12px}.footer-info{font-size:.95em;line-height:1.7}.footer-link{color:#ecf0f1;text-decoration:none}.footer-link:hover{text-decoration:underline}@media(max-width:600px){.footer-flex{flex-direction:column}}
+
+.paco-fixed-menu{position:fixed;right:calc((100vw - 900px)/2 + 5px);top:calc(75% - 60px);transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:7px;z-index:10000}.paco-icon-item{display:flex;align-items:center;justify-content:center;width:28px;height:28px;text-decoration:none}.paco-icon-item svg{display:block}@media(max-width:900px){.paco-fixed-menu{right:8px}}
+
+/* =========================================================
+   KHỐI 11 — MENU CHÂN 5 ICON — GIỮ GIAO DIỆN/CƠ CHẾ
+   Pacobooks | Tác giả | Trang chủ | PacoAI | Liên hệ
+   ========================================================= */
+.paco-bottom-nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:9998;width:min(900px,100%);height:68px;background:rgba(255,255,255,.97);box-shadow:0 -4px 16px rgba(0,0,0,.10);display:flex;align-items:center;justify-content:space-around;border-radius:14px 14px 0 0;padding:4px 6px}.paco-nav-item{width:20%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:#394b59;font-family:Arial,sans-serif;font-size:11px;font-weight:600}.paco-nav-badge{width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#eef4fb;font-size:19px;margin-bottom:2px}.paco-nav-center-circle{width:52px;height:52px;margin-top:-24px;border-radius:50%;background:linear-gradient(135deg,#008080,#004a99);display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;box-shadow:0 5px 15px rgba(0,74,153,.28);border:4px solid #fff}.paco-nav-label{white-space:nowrap}@media(max-width:420px){.paco-nav-item{font-size:10px}.paco-nav-badge{width:34px;height:34px}.paco-nav-center-circle{width:48px;height:48px}}
+</style>
+</head>
+<body>
+<div class="paco-page-wrap">
+
+<!-- =========================================================
+     KHỐI 1 — MENU 3 GẠCH
+     ========================================================= -->
+<div class="menu-paco" onclick="toggleMenu()" id="menuButton">☰</div>
+<div id="menuList" class="noidung-menu">
+  <a href="#trangchu">TRANG CHỦ</a>
+  <a href="https://duongdenbinhyen.com/">SÁCH</a>
+  <a href="https://tacgiathiennhan.com/">TÁC GIẢ</a>
+  <a href="#pacoai">PACOAI</a>
+  <a href="#lienhe">LIÊN HỆ</a>
+</div>
+
+<!-- =========================================================
+     KHỐI 2 — THANH GHIM
+     ========================================================= -->
+<div class="header-fixed-container">
+  <a href="#trangchu" class="paco-brand" style="display:flex; align-items:baseline; justify-content:center; gap:9px; white-space:nowrap;">
+    <span class="paco-brand-logo" style="display:inline-flex; align-items:baseline; line-height:1;">
+      <span class="paco-brand-paco">PACO</span><span class="paco-brand-ai">AI</span>
+    </span>
+    <span class="paco-brand-sub" style="line-height:1;">Tri thức sách &amp; Tri thức số</span>
+  </a>
+</div>
+
+<main id="trangchu">
+<!-- =========================================================
+     KHỐI 3 — HERO / THÔNG ĐIỆP MỞ ĐẦU
+     HÌNH: paco-hero.webp — 1800 × 1000 px
+     ========================================================= -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>TRI THỨC • SÁNG TẠO • CÔNG NGHỆ</h1>
+    <p>Từ những giá trị được viết nên, đến những sản phẩm được đưa vào thực tế.</p>
+    <a class="paco-btn" href="#tongquan">KHÁM PHÁ</a>
+  </div>
+</section>
+
+<!-- =========================================================
+     KHỐI 4 — TỔNG QUAN
+     ========================================================= -->
+<section class="section" id="tongquan">
+  <span class="section-label">NHỮNG LĨNH VỰC ĐANG ĐƯỢC XÂY DỰNG</span>
+  <p class="section-text">Hành trình bắt đầu từ sáng tác và xuất bản sách, từng bước phát triển sang kinh doanh trực tiếp và công nghệ phục vụ vận hành. Thay vì gom mọi hoạt động vào một thương hiệu duy nhất, từng lĩnh vực được xây dựng với tên gọi và chức năng riêng, phù hợp với đối tượng mà lĩnh vực đó phục vụ.</p>
+  <div class="flow-line">SÁCH &amp; XUẤT BẢN &nbsp; • &nbsp; TÁC GIẢ &amp; NỘI DUNG &nbsp; • &nbsp; AI &amp; TỰ ĐỘNG HÓA</div>
+</section>
+
+<!-- =========================================================
+     KHỐI 5 — PACOBOOKS
+     HÌNH: pacobooks.webp — 1400 × 800 px
+     ========================================================= -->
+<section class="section alt" id="pacobooks">
+  <div class="section-kicker">SÁCH &amp; XUẤT BẢN</div>
+  <h2 class="section-title">PACOBOOKS</h2>
+  <p class="section-text">Pacobooks là đơn vị phát hành các tác phẩm của tác giả Thiện Nhân, tập trung vào những giá trị nhân văn, trải nghiệm sống và hành trình đi tìm sự bình yên bên trong. Bên cạnh sách in, hệ thống đang từng bước mở rộng các hình thức tiếp cận nội dung trên nền tảng số và phát triển kênh kết nối trực tiếp với độc giả.</p>
+  <div class="flow-line">Đường Đến Bình Yên • Lời Thì Thầm Từ Cuộc Đời • Miền Bình Yên</div>
+  <img class="section-image" src="pacobooks.webp" width="1400" height="800" alt="Ba tác phẩm của tác giả Thiện Nhân" loading="lazy">
+  <a class="paco-btn" href="https://duongdenbinhyen.com/">KHÁM PHÁ SÁCH</a>
+</section>
+
+<!-- =========================================================
+     KHỐI 6 — TÁC GIẢ THIỆN NHÂN
+     HÌNH: tac-gia-thien-nhan.webp — 1400 × 800 px
+     ========================================================= -->
+<section class="section" id="tacgia">
+  <div class="section-kicker">TÁC GIẢ &amp; NỘI DUNG</div>
+  <h2 class="section-title">THIỆN NHÂN</h2>
+  <p class="section-text">Thiện Nhân viết từ những trải nghiệm đã đi qua và những điều được chiêm nghiệm trong đời sống. Các tác phẩm hướng về thế giới nội tâm, tình thân, sự thấu cảm và hành trình con người tìm lại sự bình yên giữa những đổi thay. Từ trang viết, nội dung tiếp tục được phát triển thành những giá trị có thể đồng hành lâu dài cùng người đọc.</p>
+  <img class="section-image" src="tac-gia-thien-nhan.webp" width="1400" height="800" alt="Tác giả Thiện Nhân" loading="lazy">
+  <a class="paco-btn" href="https://tacgiathiennhan.com/">TÌM HIỂU VỀ TÁC GIẢ</a>
+</section>
+
+<!-- =========================================================
+     KHỐI 7 — PACOAI
+     HÌNH: pacoai.webp — 1400 × 800 px
+     MENU PACOAI CUỘN TỚI #pacoai
+     ========================================================= -->
+<section class="section alt" id="pacoai">
+  <div class="section-kicker">AI &amp; TỰ ĐỘNG HÓA</div>
+  <h2 class="section-title">PACOAI</h2>
+  <p class="section-text">PacoAI được phát triển từ chính nhu cầu vận hành kinh doanh thực tế. Hệ thống hiện đang ứng dụng AI để tiếp nhận khách hàng từ website và Facebook, tư vấn sản phẩm, thu thập thông tin mua hàng và tự động tạo đơn trên hệ thống quản lý.</p>
+  <p class="section-text">Từ nền tảng tư vấn tự động hiện tại, PacoAI đang tiếp tục mở rộng sang quản lý bán hàng và các công cụ hỗ trợ vận hành, hướng tới một quy trình ngày càng liền mạch từ khi khách hàng bắt đầu quan tâm đến khi đơn hàng được xử lý.</p>
+  <div class="flow-line">Công nghệ được xây dựng từ nhu cầu thực tế và kiểm chứng bằng vận hành thực tế.</div>
+  <img class="section-image" src="pacoai.webp" width="1400" height="800" alt="Hệ thống PacoAI" loading="lazy">
+  <a class="paco-btn" href="#pacoai">KHÁM PHÁ PACOAI</a>
+</section>
+
+<!-- =========================================================
+     KHỐI 8 — SỰ KẾT NỐI
+     HÌNH: ket-noi.webp — 1400 × 800 px
+     ========================================================= -->
+<section class="section" id="ketnoi">
+  <span class="section-label">TỪ NỘI DUNG ĐẾN VẬN HÀNH</span>
+  <p class="section-text">Ba lĩnh vực hiện tại tạo nên một chuỗi kinh nghiệm thực tế: sáng tạo nội dung và xây dựng sản phẩm, phát triển thương hiệu và kênh bán, tiếp cận khách hàng, rồi ứng dụng công nghệ để hỗ trợ quá trình vận hành. Chính quá trình đó tạo nền tảng để tiếp tục phát triển những sản phẩm và dự án mới trong tương lai.</p>
+  <div class="flow-line">NỘI DUNG → SẢN PHẨM → THƯƠNG HIỆU → BÁN HÀNG → CÔNG NGHỆ → VẬN HÀNH</div>
+  <img class="section-image" src="ket-noi.webp" width="1400" height="800" alt="Sự kết nối giữa nội dung, sản phẩm và công nghệ" loading="lazy">
+</section>
+
+<!-- =========================================================
+     KHỐI 9 — KHÔNG GIAN PHÁT TRIỂN
+     HÌNH: tuong-lai.webp — 1400 × 800 px
+     ========================================================= -->
+<section class="section alt" id="tuonglai">
+  <span class="section-label">NHỮNG DỰ ÁN TIẾP THEO</span>
+  <p class="section-text">PACOVN.COM được xây dựng với cấu trúc mở để kết nối thêm những sản phẩm và dự án mới khi được đưa vào thực tế. Mỗi dự án sẽ có định vị, nội dung và không gian riêng, đồng thời được kết nối tại đây để người dùng có thể tiếp cận toàn bộ hệ thống một cách rõ ràng và thuận tiện.</p>
+  <img class="section-image" src="tuong-lai.webp" width="1400" height="800" alt="Không gian phát triển các dự án tiếp theo" loading="lazy">
+</section>
+
+<!-- =========================================================
+     KHỐI 10 — FORM GỬI THÔNG TIN LIÊN HỆ
+     Đã đổi từ form địa chỉ nhận sách.
+     ========================================================= -->
+<section class="section" id="lienhe">
+  <span class="section-label">KẾT NỐI</span>
+  <p class="section-text">Thông tin dành cho độc giả, khách hàng, đối tác và những nhu cầu hợp tác liên quan đến sách, nội dung, công nghệ hoặc các dự án đang phát triển.</p>
+  <div class="contact-wrap">
+    <div class="contact-form">
+      <div style="font-size:20px;font-weight:bold;color:#1a1a1a;margin-bottom:20px;text-align:center;text-transform:uppercase;">GỬI THÔNG TIN LIÊN HỆ</div>
+      <form id="pacoForm">
+        <input type="text" name="Họ và Tên" placeholder="Họ và tên" required>
+        <input type="tel" name="Số điện thoại" placeholder="Số điện thoại - nhập đủ 10 số" required>
+        <textarea name="Nội dung liên hệ" placeholder="Nội dung cần liên hệ" required></textarea>
+        <input type="hidden" name="Nguon_Don" value="PACOVN - Liên hệ">
+        <div style="display:none"><input type="text" name="confirm_email" value=""></div>
+        <button type="submit" id="submitBtn" class="submit-btn">GỬI THÔNG TIN</button>
+      </form>
+      <div id="msg" class="hidden" style="color:#2e7d32;text-align:center;margin-top:15px;font-weight:bold;">Gửi thông tin thành công!</div>
+    </div>
+    <div class="contact-side">
+      <div class="contact-card"><b>PACOBOOKS</b><p>Sách &amp; xuất bản</p></div>
+      <div class="contact-card"><b>PACOAI</b><p>AI &amp; tự động hóa</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- =========================================================
+     KHỐI 11 — FOOTER
+     ========================================================= -->
+<footer class="paco-footer">
+  <div class="footer-flex">
+
+    <!-- =====================================================
+         CỘT 1 — THÔNG TIN LIÊN HỆ PACOAI
+         ===================================================== -->
+    <div class="footer-column">
+      <span class="footer-brand">PACOAI</span>
+      <div class="footer-info">
+        Địa chỉ: 46 Lê Đình Thám, P. Tân Sơn Nhì - Thành phố Hồ Chí Minh - Việt Nam<br>
+        Điện thoại: <a class="footer-link" href="tel:0933223301">09 33 22 33 01</a><br>
+        Email: <a class="footer-link" href="mailto:tgthiennhan@gmail.com">tgthiennhan@gmail.com</a><br>
+        Website: <a class="footer-link" href="https://pacovn.com/">https://pacovn.com</a>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         CỘT 2 — LIÊN KẾT
+         ===================================================== -->
+    <div class="footer-column">
+      <span class="footer-brand">LIÊN KẾT</span>
+      <div class="footer-info">
+        <a class="footer-link" href="https://duongdenbinhyen.com/">Pacobooks</a><br>
+        <a class="footer-link" href="https://tacgiathiennhan.com/">Tác giả Thiện Nhân</a><br>
+        <a class="footer-link" href="#pacoai">PacoAI</a><br>
+        <a class="footer-link" href="#lienhe">Liên hệ</a>
+      </div>
+    </div>
+
+<!-- =====================================================
+     CỘT 3 — CHÍNH SÁCH & BẢO MẬT
+     ===================================================== -->
+<div class="footer-column">
+  <span class="footer-brand">CHÍNH SÁCH &amp; BẢO MẬT</span>
+  <div class="footer-info">
+    <a class="footer-link" href="https://pacovn.com/chinhsach.html#vechungtoi">🖋️ Về chúng tôi</a><br>
+    <a class="footer-link" href="https://pacovn.com/chinhsach.html#chinhsachbaomat">🛡️ Chính sách bảo mật</a><br>
+    <a class="footer-link" href="https://pacovn.com/chinhsach.html#chinhsachbanhang">📦 Chính sách bán hàng</a><br>
+    <a class="footer-link" href="https://pacovn.com/chinhsach.html#chinhsachbaohanh">🔄 Chính sách bảo hành</a>
+  </div>
+</div>
+
+  </div>
+</footer>
+
+<!-- =========================================================
+     KHỐI 12 — MENU DỌC BÊN PHẢI — KHÔI PHỤC TỪ TRANG GỐC
+     Trang chủ | Facebook | Zalo | Ebook
+     ========================================================= -->
+<div class="paco-fixed-menu">
+  <a href="https://pacovn.com/" class="paco-icon-item" aria-label="Trang chủ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#008080"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+  </a>
+  <a href="https://www.facebook.com/duongdenbinhyen" target="_blank" class="paco-icon-item" aria-label="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+  </a>
+  <a href="https://zalo.me/0933223301" target="_blank" class="paco-icon-item" aria-label="Zalo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" fill="#0068ff"/><text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Arial">Zalo</text></svg>
+  </a>
+  <a href="https://duongdenbinhyen.com/#ebook" class="paco-icon-item" aria-label="Xem Ebook">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#004a99"><path d="M3.18 23.76c.3.17.64.24.99.2l12.6-11.96-2.87-2.87L3.18 23.76zM.68 1.23C.26 1.67 0 2.35 0 3.23v17.54c0 .88.26 1.56.68 2l.11.1 9.83-9.83v-.23L.79 3.13l-.11.1zM20.55 10.3L17.3 8.45l-3.17 3.17 3.17 3.17 3.27-1.86c.93-.53.93-1.39 0-1.93v.3zM4.17.24l12.6 11.96-2.87 2.87L3.18.44C3.53.4 3.87.47 4.17.24z"/></svg>
+  </a>
+</div>
+
+<!-- =========================================================
+     KHỐI 13 — MENU CHÂN — GIỮ 5 MỤC
+     ========================================================= -->
+<div class="paco-bottom-nav">
+  <a href="https://duongdenbinhyen.com/" class="paco-nav-item"><div class="paco-nav-badge">📚</div><span class="paco-nav-label">Pacobooks</span></a>
+  <a href="https://tacgiathiennhan.com/" class="paco-nav-item"><div class="paco-nav-badge">✍️</div><span class="paco-nav-label">Tác giả</span></a>
+  <a href="#trangchu" class="paco-nav-item"><div class="paco-nav-center-circle">⌂</div><span class="paco-nav-label">Trang chủ</span></a>
+  <a href="#pacoai" class="paco-nav-item"><div class="paco-nav-badge">AI</div><span class="paco-nav-label">PacoAI</span></a>
+  <a href="#lienhe" class="paco-nav-item"><div class="paco-nav-badge">☎</div><span class="paco-nav-label">Liên hệ</span></a>
+</div>
+
+<!-- =========================================================
+     JAVASCRIPT 1 — MENU 3 GẠCH
+     ========================================================= -->
+<script>
+function toggleMenu(){var m=document.getElementById('menuList');if(m)m.style.display=(m.style.display==='block')?'none':'block'}
+window.addEventListener('click',function(e){var m=document.getElementById('menuList'),b=document.getElementById('menuButton');if(m&&b&&!m.contains(e.target)&&!b.contains(e.target))m.style.display='none'});
+window.addEventListener('scroll',function(){var m=document.getElementById('menuList');if(m)m.style.display='none'});
+</script>
+
+<!-- =========================================================
+     JAVASCRIPT 2 — GỬI FORM LIÊN HỆ
+     Giữ endpoint Google Apps Script của file gốc.
+     ========================================================= -->
+<script>
+var clientIP='';
+document.addEventListener('DOMContentLoaded',function(){
+  var form=document.getElementById('pacoForm'),btn=document.getElementById('submitBtn'),msg=document.getElementById('msg');
+  if(!form)return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var phone=form.querySelector('input[type="tel"]');
+    var phoneValue=phone.value.trim().replace(/\D/g,'');
+    phone.setCustomValidity('');
+    if(phoneValue.length!==10){phone.setCustomValidity('Vui lòng nhập đúng 10 số điện thoại!');phone.reportValidity();return}
+    btn.disabled=true;btn.innerHTML='ĐANG GỬI...';
+    var formData=new FormData(form);formData.append('IP',clientIP);
+    fetch('https://script.google.com/macros/s/AKfycbwldlQLTMI7sHFuArZl0oV1vayHvm6krhPEn8IqDQWn_olPnwVCMKOAWSulvpUfsylf/exec',{method:'POST',mode:'no-cors',body:formData})
+      .then(function(){msg.classList.remove('hidden');btn.innerHTML='ĐÃ GỬI THÀNH CÔNG';form.reset();setTimeout(function(){btn.disabled=false;btn.innerHTML='GỬI THÔNG TIN';msg.classList.add('hidden')},5000)})
+      .catch(function(err){btn.disabled=false;btn.innerHTML='THỬ LẠI';console.error('Lỗi:',err)});
+  });
+});
+window.addEventListener('load',function(){setTimeout(function(){fetch('https://api.ipify.org?format=json').then(function(r){return r.json()}).then(function(d){clientIP=d.ip}).catch(function(){clientIP='Không lấy được'})},3000)});
+</script>
+</div>
+</body>
+</html>
