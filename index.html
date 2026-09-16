@@ -41,7 +41,7 @@
 /* =========================================================
    KHỐI 0 — THIẾT LẬP CHUNG
    ========================================================= */
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#d0e8e0;color:#333;font-family:'Times New Roman',serif}.paco-page-wrap{max-width:900px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 24px rgba(0,0,0,.06)}img{max-width:100%;display:block;pointer-events:none;-webkit-user-drag:none;user-select:none}.hidden{display:none}.container-paco{max-width:900px;margin:auto}.section{padding:60px 28px}.section.alt{background:#f8f9fa}.section-label{display:block;color:#004a99;font-size:1.55em;font-weight:bold;letter-spacing:2px;text-transform:uppercase;border-left:6px solid #004a99;padding-left:15px;margin-bottom:24px;line-height:1.2;text-shadow:1px 1px 0 #ddd}.section-title{font-size:2em;color:#004a99;margin:0 0 18px;text-transform:uppercase}.section-kicker{font-size:.95em;font-weight:bold;color:#007c70;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}.section-text{font-size:1.18em;line-height:1.85;text-align:justify;margin:0 0 20px}.section-image{width:100%;height:auto;border-radius:8px;margin:28px auto 0;box-shadow:0 10px 28px rgba(0,0,0,.10)}.paco-btn{display:inline-block;margin-top:12px;padding:10px 24px;border:1.5px solid #004a99;border-radius:99px;color:#004a99;text-decoration:none;font-weight:bold;transition:.2s}.paco-btn:hover{background:#004a99;color:#fff}.flow-line{text-align:center;color:#004a99;font-weight:bold;letter-spacing:1px;line-height:1.8;margin:24px 0}.domain-note{font-size:.95em;color:#666;margin-top:8px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#d0e8e0;color:#333;font-family:'Times New Roman',serif}.paco-page-wrap{max-width:900px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 24px rgba(0,0,0,.06)}img{max-width:100%;display:block;pointer-events:none;-webkit-user-drag:none;user-select:none}.hidden{display:none}.container-paco{max-width:900px;margin:auto}.section{padding:60px 28px}.section.alt{background:#f8f9fa}.section-label{display:block;color:#004a99;font-size:1.55em;font-weight:bold;letter-spacing:2px;text-transform:uppercase;border-left:6px solid #004a99;padding-left:15px;margin-bottom:24px;line-height:1.2;text-shadow:1px 1px 0 #ddd}.section-title{font-size:2em;color:#004a99;margin:0 0 18px;text-transform:uppercase}.section-kicker{font-size:.95em;font-weight:bold;color:#007c70;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}.section-text{font-size:1.18em;line-height:1.85;text-align:justify;margin:0 0 20px}.section-image{width:100%;height:auto;border-radius:8px;margin:28px auto 0;box-shadow:0 10px 28px rgba(0,0,0,.10)}.paco-btn{display:inline-block;margin-top:12px;padding:10px 24px;border:1.5px solid #004a99;border-radius:99px;color:#004a99;text-decoration:none;font-weight:bold;transition:.2s}.paco-btn:hover{background:#004a99;color:#fff}.flow-line{text-align:center;color:#004a99;font-weight:bold;letter-spacing:1px;line-height:1.8;margin:24px 0}.domain-note{font-size:.95em;color:#666;margin-top:8px}.flow-responsive{display:flex;align-items:center;justify-content:flex-start;gap:18px;flex-wrap:nowrap;text-align:left}.flow-responsive span{white-space:nowrap}@media(max-width:600px){.flow-responsive{display:flex;flex-direction:column;align-items:flex-start;gap:0}.flow-responsive span{display:block;width:100%}}
 @media(max-width:600px){.section{padding:40px 16px}.section-label{font-size:1.15em}.section-title{font-size:1.55em}.section-text{font-size:1.08em;line-height:1.7}}
 
 /* =========================================================
@@ -139,7 +139,11 @@
 <section class="section" id="tongquan">
   <span class="section-label">NHỮNG LĨNH VỰC ĐANG ĐƯỢC XÂY DỰNG</span>
   <p class="section-text">Hành trình bắt đầu từ sáng tác và xuất bản sách, từng bước phát triển sang kinh doanh trực tiếp và công nghệ phục vụ vận hành. Thay vì gom mọi hoạt động vào một thương hiệu duy nhất, từng lĩnh vực được xây dựng với tên gọi và chức năng riêng, phù hợp với đối tượng mà lĩnh vực đó phục vụ.</p>
-  <div class="flow-line">SÁCH &amp; XUẤT BẢN &nbsp; • &nbsp; TÁC GIẢ &amp; NỘI DUNG &nbsp; • &nbsp; AI &amp; TỰ ĐỘNG HÓA</div>
+  <div class="flow-line flow-responsive">
+    <span>● SÁCH &amp; XUẤT BẢN</span>
+    <span>● TÁC GIẢ &amp; NỘI DUNG</span>
+    <span>● AI &amp; TỰ ĐỘNG HÓA</span>
+  </div>
 </section>
 
 <!-- =========================================================
@@ -150,7 +154,11 @@
   <div class="section-kicker">SÁCH &amp; XUẤT BẢN</div>
   <h2 class="section-title">PACOBOOKS</h2>
   <p class="section-text">Pacobooks là đơn vị phát hành các tác phẩm của tác giả Thiện Nhân, tập trung vào những giá trị nhân văn, trải nghiệm sống và hành trình đi tìm sự bình yên bên trong. Bên cạnh sách in, hệ thống đang từng bước mở rộng các hình thức tiếp cận nội dung trên nền tảng số và phát triển kênh kết nối trực tiếp với độc giả.</p>
-  <div class="flow-line">Đường Đến Bình Yên • Lời Thì Thầm Từ Cuộc Đời • Miền Bình Yên</div>
+  <div class="flow-line flow-responsive">
+    <span>● Đường Đến Bình Yên</span>
+    <span>● Lời Thì Thầm Từ Cuộc Đời</span>
+    <span>● Miền Bình Yên</span>
+  </div>
   <img class="section-image" src="pacobooks.webp" width="1400" height="800" alt="Ba tác phẩm của tác giả Thiện Nhân" loading="lazy">
   <a class="paco-btn" href="https://duongdenbinhyen.com/">KHÁM PHÁ SÁCH</a>
 </section>
